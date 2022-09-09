@@ -1,0 +1,23 @@
+﻿@model Pension_Management_Portal.Models.Pensioner
+@{
+    ViewData["Title"] = "UpdatePension";
+}
+
+<h1>UpdatePension</h1>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="UpdatePension">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="AadharNumber" class="control-label"></label>
+                <input asp-for="AadharNumber" class="form-control" />
+                <span asp-validation-for="AadharNumber" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Get Details" class="btn btn-secondary" />
+            </div>
+        </form>
+    </div>
+</div>
+
